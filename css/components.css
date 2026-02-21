@@ -1,0 +1,14 @@
+.buttons__button {
+padding: 15px 49px;
+border-radius: 27px;
+border: 1px solid var(--dark-700);
+cursor: pointer;
+}
+
+.primario {
+    background: var(--background-color-primary-button);
+}
+
+.secundario {
+    background: var(--background-color-secundary-button);
+}
