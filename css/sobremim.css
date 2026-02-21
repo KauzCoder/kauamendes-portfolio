@@ -1,0 +1,27 @@
+.sobre-mim {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-mim__apresentacao-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.container-titulo__paginacao {
+display: flex;
+align-items: center;
+gap: 9px;
+}
+
+.paginacao__titulo{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.52px;
+    color: var(--gradiente-purple);
+}
