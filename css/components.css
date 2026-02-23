@@ -1,11 +1,4 @@
-  /* ====== BUTTONS ====== */
-
-.buttons__button {
-padding: 15px 49px;
-border-radius: 27px;
-border: 1px solid var(--dark-700);
-cursor: pointer;
-}
+/* ====== BUTTONS ====== */
 
 .primario {
     background: var(--background-color-primary-button);
@@ -14,6 +7,63 @@ cursor: pointer;
 .secundario {
     background: var(--background-color-secundary-button);
 }
+
+.btn-spotlight {
+    --x: 50%;
+    --y: 50%;
+    position: relative;
+    padding: 15px 49px;
+    border-radius: 27px;
+    border: 1px solid var(--dark-700);
+    overflow: hidden;
+    cursor: pointer;
+    
+    transition: transform .15s ease, border-color .2s ease;
+}
+
+.btn-spotlight:hover{
+    border-color: rgba(255,255,255,.25);
+    transform: translateY(-1px);
+  }
+
+  .btn-spotlight::before{
+    content: "";
+    position: absolute;
+    inset: -40px; /* maior pra luz não cortar */
+    pointer-events: none;
+
+    /* luz radial que nasce no ponto do mouse */
+    background: radial-gradient(
+      300px circle at var(--x) var(--y),
+      rgba(255,255,255,.22),
+      #6407fa36 35%,
+      transparent 65%
+    );
+
+    opacity: 0;
+    transition: opacity .2s ease;
+  }
+
+  .btn-spotlight:hover::before{
+    opacity: 1;
+  }
+
+  /* Um brilho extra sutil por cima (opcional) */
+  .btn-spotlight::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,.08),
+      transparent 40%,
+      rgba(0,0,0,.25)
+    );
+    mix-blend-mode: screen;
+    opacity: .7;
+  }
+
 
  /* ====== GRADIENTE ====== */
 
@@ -26,6 +76,12 @@ cursor: pointer;
 }
 
  /* ====== PAGINACAO ====== */
+ .apresentacao-paginacao {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 159px;
+}
 .barra-paginacao {
     width: 50px;  
     height: 1px;
@@ -49,6 +105,7 @@ cursor: pointer;
     font-weight: 400;
     letter-spacing: 3.96px;
     width: 800px;
+    text-align: justify;
 }
 
  /* ====== CARDS ====== */
