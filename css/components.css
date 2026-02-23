@@ -48,7 +48,6 @@
     opacity: 1;
   }
 
-  /* Um brilho extra sutil por cima (opcional) */
   .btn-spotlight::after{
     content:"";
     position:absolute;
@@ -66,6 +65,15 @@
 
 
  /* ====== GRADIENTE ====== */
+
+ .radial-gradiente-background {
+  width: 694.556px;
+  height: 700px;
+  
+  position: absolute;
+  border-radius: 643.711px;
+  background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
+ }
 
 .texto-gradiente {
     background: var(--gradiente-purple);

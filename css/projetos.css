@@ -1,1 +1,60 @@
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 173px;
+}
 
+.projetos__project-featured {
+    display: flex;
+    justify-content: center;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.row-reverse .project-featured__info {
+    margin-right: 0;
+    margin-left: -27px;
+}
+.project-featured__info {
+margin-right: -27px;
+}
+
+
+
+.header-project__title {
+    font-size: 34px;
+}
+
+.header-project__subtitle {
+    color: var(--Primary-Neon-Purple, #A259FF);
+}
+
+.info__header{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info__card-description {
+    margin: 30px 0 26px 0;
+    padding: 26px 55px 31px 37px;
+    width: 670px;
+    height: auto;
+}
+
+.card-description__text-description {
+    width: 500px;
+}
+
+.imagem-projeto {
+    max-height: 350px;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
