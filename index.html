@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="css/global.css">
     <script src="src/js/animacao-digitacao.js" defer></script>
     <script src="src/js/Effect-light-in-button.js" defer></script>
+    <script src="src/js/barra-animada-paginacao.js" defer></script>
     <title>Portifolio Kaua Mendes</title>
 </head>
 <body>
+  <!-- Paginação -->
+  <nav class="pager" aria-label="Paginação por seção">
+    <button class="dot" data-target="#hero" aria-label="Ir para seção 1"></button>
+    <button class="dot" data-target="#sobre-mim" aria-label="Ir para seção 2"></button>
+    <button class="dot" data-target="#skills" aria-label="Ir para seção 3"></button>
+    <button class="dot" data-target="#projetos" aria-label="Ir para seção 4"></button>
+    <button class="dot" data-target="#experiencia-educacao" aria-label="Ir para seção 5"></button>
+    <button class="dot" data-target="#contato" aria-label="Ir para seção 6"></button>
+  </nav>
+
     <header class="header">
         <nav class="header__navbar">
             <ul class="navbar__nav-links">
@@ -46,7 +57,7 @@
                 </div>
 
                 <div class="hero-scroll__indicativo-scroll">
-                    <p>SCROLL</p>
+                    <a href="#sobre-mim">SCROLL</a>
                     <div class="barra-vertical"></div>
                 </div>
             </div>

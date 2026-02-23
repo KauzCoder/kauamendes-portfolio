@@ -117,3 +117,68 @@
     box-shadow: 4px 4px 27.8px 0 rgba(255, 255, 255, 0.17) inset;
     backdrop-filter: var(--blur-filter);
 }
+
+    /* ====== PAGINAÇÃO (ESQUERDA) ====== */
+    .pager {
+      position: fixed;
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9999;
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+ 
+    .pager::before {
+      content: "";
+      position: absolute;
+      top: -28px;
+      bottom: -28px;
+      width: 2px;
+      background: rgba(94, 0, 245, 0.425);
+      border-radius: 999px;
+      z-index: -1;
+    }
+
+    .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+
+      transform: rotate(45deg);
+
+    
+      background: #a855f7;
+      border: 2px solid transparent;
+
+      cursor: pointer;
+      outline: none;
+
+      transition:
+        background-color .2s ease,
+        border-color .2s ease,
+        filter .2s ease;
+    }
+
+    .dot:hover {
+      filter: brightness(1.15);
+    }
+
+    .dot.is-active {
+      background: transparent;
+      border-color: #a855f7;
+    }
+
+    .dot.is-spinning {
+      animation: spinToOutline .45s cubic-bezier(.2,.8,.2,1);
+    }
+
+    @keyframes spinToOutline {
+      0%   { transform: rotate(45deg) scale(1); }
+      55%  { transform: rotate(405deg) scale(1.1); } /* gira + “pula” */
+      100% { transform: rotate(45deg) scale(1); }
+    }
