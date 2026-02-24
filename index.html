@@ -6,9 +6,21 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <script src="src/js/animacao-digitacao.js" defer></script>
+    <script src="src/js/Effect-light-in-button.js" defer></script>
+    <script src="src/js/barra-animada-paginacao.js" defer></script>
     <title>Portifolio Kaua Mendes</title>
 </head>
 <body>
+  <!-- Paginação -->
+  <nav class="pager" aria-label="Paginação por seção">
+    <button class="dot" data-target="#hero" aria-label="Ir para seção 1"></button>
+    <button class="dot" data-target="#sobre-mim" aria-label="Ir para seção 2"></button>
+    <button class="dot" data-target="#skills" aria-label="Ir para seção 3"></button>
+    <button class="dot" data-target="#projetos" aria-label="Ir para seção 4"></button>
+    <button class="dot" data-target="#experiencia-educacao" aria-label="Ir para seção 5"></button>
+    <button class="dot" data-target="#contato" aria-label="Ir para seção 6"></button>
+  </nav>
+
     <header class="header">
         <nav class="header__navbar">
             <ul class="navbar__nav-links">
@@ -39,17 +51,17 @@
                         </div>
                     </div>
                     <div class="conatainer-informacoes__buttons">
-                        <button class="buttons__button primario">Entrar em Contato</button>
-                        <button class="buttons__button secundario"><a href="#projetos">Ver Meus Trabalhos</a></button>
+                        <button class="btn-spotlight primario"> <a href="#contato">Vamos Trabalhar Juntos</a></button>
+                        <button class="btn-spotlight secundario"><a href="#projetos">Explorar Projetos</a></button>
                     </div>
                 </div>
 
                 <div class="hero-scroll__indicativo-scroll">
-                    <p>SCROLL</p>
+                    <a href="#sobre-mim">SCROLL</a>
                     <div class="barra-vertical"></div>
                 </div>
             </div>
-            <img src="assets/imgs/1765549276435 1.svg" alt="Figura abstrata de um quadrado com formas geométricas" class="hero__imagem-hero">
+            <img src="assets/imgs/1765549276435 1.svg" alt="Figura abstrata de um quadrado com formas geomÃ©tricas" class="hero__imagem-hero">
         </section>
         <section class="sobre-mim" id="sobre-mim">
             <div class="sobre-mim__apresentacao-sobre-mim">
@@ -79,7 +91,7 @@
             </div>
         </section>
         <section class="skills" id="skills">
-            <div class="skills__apresentacao-skills">
+            <div class="apresentacao-paginacao">
                 <div class="container-paginacao">
                     <hr class="barra-paginacao">
                     <h2 class="paginacao-titulo texto-gradiente"> TECNOLOGIAS & FERRAMENTAS QUE UTILIZO</h2>
@@ -90,7 +102,7 @@
                 <li class="lista-skills__container-card card">
                     <div class="container-card__header">
                          <img src="assets/icons/frontend.svg" alt="" class="header__icon">
-                        <h3 class="header__title">Frontend & UI</h3>
+                        <h3 class="header-skills__title">Frontend & UI</h3>
                     </div>
                     <p class="container-card__stack texto-gradiente">HTML5 · CSS3 · JavaScript (ES6+) · TypeScript · React ·  Figma</p>
                     <p class="container-card__description">Criação de interfaces modernas, responsivas e acessíveis, com componentização, reutilização de código e foco em experiência do usuário.</p>
@@ -98,7 +110,7 @@
                 <li class="lista-skills__container-card card">
                     <div class="container-card__header">
                          <img src="assets/icons/banco-de-dados.svg" alt="" class="header__icon">
-                        <h3 class="header__title">Banco de Dados</h3>
+                        <h3 class="header-skills__title">Banco de Dados</h3>
                     </div>
                     <p class="container-card__stack texto-gradiente">MySQL · PostgreSQL · MongoDB</p>
                     <p class="container-card__description">Desenvolvimento e manutenção de estruturas de dados, com foco em performance, escalabilidade e integridade dos dados.</p>
@@ -106,23 +118,72 @@
                 <li class="lista-skills__container-card card">
                     <div class="container-card__header">
                          <img src="assets/icons/backend.svg" alt="" class="header__icon">
-                        <h3 class="header__title">Backend & Server</h3>
+                        <h3 class="header-skills__title">Backend & Server</h3>
                     </div>
                     <p class="container-card__stack texto-gradiente">Node.js · Express · NestJS · Python · API REST</p>
                     <p class="container-card__description">Desenvolvimento de lógica de servidor, criação e consumo de APIs, autenticação básica, modelagem de dados e operações CRUD com bancos de dados relacionais.</p>
                 </li>
                 <li class="lista-skills__container-card card">
                     <div class="container-card__header">
-                         <img src="assets/icons/versionamento.svg" alt="" class="header__icon">
-                        <h3 class="header__title">Controle de Versão</h3>
+                         <img src="assets/icons/versionamento.svg" alt="" class="header-skills__icon">
+                        <h3 class="header-skills__title">Controle de Versão</h3>
                     </div>
                     <p class="container-card__stack texto-gradiente">Git · GitHub · GitLab</p>
                     <p class="container-card__description">Controle de versões de código, colaboração em equipes e gerenciamento de branches em projetos de desenvolvimento.</p>
                 </li>
             </ul>
         </section>
+
         <section class="projetos" id="projetos">
+            <div class="apresentacao-paginacao">
+                <div class="container-paginacao">
+                    <hr class="barra-paginacao">
+                    <h2 class="paginacao-titulo texto-gradiente">PROJETOS EM DESTAQUE</h2>
+                </div>
+                <p class="descricao-paginacao" >Aqui estão alguns projetos que representam minha evolução como desenvolvedor e minha forma de resolver problemas com tecnologia.</p>
+            </div>  
+
+            <article class="projetos__project-featured">
+                    <div class="project-featured__info">
+                        <div class="info__header">
+                            <span class="header-project__subtitle">Projeto Frontend</span>
+                            <h3 class="header-project__title">Tamo Nessa COP</h3>
+                        </div>
+                        <div class="info__card-description card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus esse magnam ducimus placeat voluptates delectus porro iure doloribus et. Molestias vero laudantium, fuga impedit corporis blanditiis error minima nulla!</p>
+                        </div>
+                        <button class="btn-spotlight primario"><a href="#">Ver Projeto</a></button>
+                    </div> 
+                    <img src="assets/imgs/Desktop-10.png" alt="Preview do projeto" class="imagem-projeto">
+            </article>
+            <article class="projetos__project-featured row-reverse">
+                    <div class="project-featured__info">
+                    <div>
+                        <span class="header-project__subtitle">Projeto Backend</span>
+                        <h3 class="header-project__title">Gerenciador de Plano de Saude</h3>
+                    </div>
+                    <div class="info__card-description card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, cum porro ab quae dolorem expedita provident suscipit quidem asperiores consequatur fuga temporibus ipsam incidunt! Deserunt hic vero ex odio sequi!</p>
+                    </div>
+                    <button class="btn-spotlight primario"><a href="#">Ver Projeto</a></button>
+                    </div>
+                    <img src="assets/imgs/frierenjavascript.jpg" alt="Preview do projeto" class="imagem-projeto">
+            </article>
+            <article class="projetos__project-featured">
+                    <div class="project-featured__info">
+                    <div class="info__header">
+                        <span class="header-project__subtitle">Projeto FullStack</span>
+                        <h3 class="header-project__title">Projeto de Site Pomorodo</h3>
+                    </div>
+                    <div class="info__card-description card">
+                        <p class="card-description__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolore nulla nihil aut veritatis sint sit delectus quod error repellendus earum accusamus provident laborum alias, at, obcaecati odit saepe aliquam!</p>
+                    </div>
+                    <button class="btn-spotlight primario"><a href="#">Ver Projeto</a></button>
+                    </div>
+                    <img src="assets/imgs/Foco-Vazio(Desktop).png" alt="Preview do projeto" class="imagem-projeto">
+            </article>
         </section>
+
         <section class="experiencia-educacao" id="experiencia-educacao">
         </section>
         <section class="contato" id="contato">
