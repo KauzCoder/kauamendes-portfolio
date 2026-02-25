@@ -13,13 +13,14 @@
 }
 
 .lista-skills__container-card {
-    display: flex;
-    width: 35%;
-    height: 190px;
-    padding: 45px 38px;
-    flex-direction: column;
-    gap: 15px;
-    flex-grow: 1;
+display: flex;
+width: 35%;
+height: 190px;
+padding: 45px 38px;
+flex-direction: column;
+gap: 15px;
+flex-grow: 1;
+background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .container-card__header {
