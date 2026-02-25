@@ -40,5 +40,12 @@ background-color: hsla(0, 0%, 0%, 0.5);
 
 .container-card__description {
     font-weight: 400;
-    letter-spacing: 1px;
+
+    line-height: normal;
+}
+
+.container-card__tags-skills {
+    display: flex;
+    gap: 10px;
+
 }
