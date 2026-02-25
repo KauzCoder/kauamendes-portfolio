@@ -45,6 +45,9 @@ margin-right: -27px;
     padding: 26px 55px 31px 37px;
     width: clamp(100px, 67vw, 670px);
     height: auto;
+
+    font-weight: 400;
+    line-height: normal;
 }
 
 .card-description__text-description {
