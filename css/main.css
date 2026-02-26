@@ -1,0 +1,24 @@
+/* Base */
+@import url("./base/reset.css");
+@import url("./base/fonts.css");
+@import url("./base/variables.css");
+@import url("./base/base.css");
+
+/* Layout */
+@import url("./layout/section.css");
+
+/* Components */
+@import url("./components/header.css");
+@import url("./components/hero.css");
+@import url("./components/sobremim.css");
+@import url("./components/skills.css");
+@import url("./components/projetos.css");
+
+@import url("./components/card.css");
+@import url("./components/button-spotlight.css");
+@import url("./components/pager.css");
+@import url("./components/section-heading.css");
+
+/* Utilities */
+@import url("./utilities/text-gradient.css");
+@import url("./utilities/visual.css");

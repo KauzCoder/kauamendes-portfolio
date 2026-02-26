@@ -1,0 +1,7 @@
+.texto-gradiente {
+  background: var(--gradient-text-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
