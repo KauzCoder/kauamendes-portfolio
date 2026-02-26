@@ -1,4 +1,4 @@
-const dots = Array.from(document.querySelectorAll(".dot"));
+const dots = Array.from(document.querySelectorAll(".pager__dot"));
     const sections = dots.map(d => document.querySelector(d.dataset.target));
 
     // clique -> scroll suave
@@ -16,15 +16,15 @@ const dots = Array.from(document.querySelectorAll(".dot"));
       if (index === activeIndex) return;
 
       // remove estados antigos
-      dots.forEach(d => d.classList.remove("is-active"));
+      dots.forEach(d => d.classList.remove("pager__dot--active"));
       // adiciona no novo
       const dot = dots[index];
       if (!dot) return;
 
-      dot.classList.add("is-active");
-      dot.classList.remove("is-spinning"); // reseta animação
+      dot.classList.add("pager__dot--active");
+      dot.classList.remove("pager__dot--spinning"); // reseta animação
       void dot.offsetWidth;                 // “reflow” pra reiniciar animação
-      dot.classList.add("is-spinning");
+      dot.classList.add("pager__dot--spinning");
 
       activeIndex = index;
     }
