@@ -1,0 +1,93 @@
+.experiencia-educacao {
+    margin-top: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.experiencia-educacao__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.experiencia-educacao__nav.card {
+    border-radius: 100px;
+}
+
+.experiencia-educacao__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.experiencia-educacao__nav-divider{
+    min-width: 100px;
+    width: auto;
+    height: 1px;
+    background-color: var(--white-pure);
+}
+
+.experiencia-educacao__nav-btn {
+    padding: 15px 40px;
+    color: var(--color-white);
+    background-color: transparent;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.experiencia-educacao__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 38px 28px;
+    max-width: 669px;
+    width: 100%;
+    max-height: 347px;
+    gap: 20px;
+}
+
+.experiencia-educacao__card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.experiencia-educacao__empresa {
+    font-size: var(--font-size-subtitle);
+    color: var(--color-white);
+}
+
+.experiencia-educacao__cargo {
+    font-size: var(--font-size-base);
+    color: var(--color-primary-500);
+}
+
+.experiencia-educacao__periodo {
+    border-radius: 21px;
+    border: 1px solid var(--Primary-Soft-Glow, #A08FFF);
+    background: var(--Dark-700, #0C0B20);
+    padding: 11px 11px;
+    color: var(--color-primary-500);
+    font-weight: var(--font-weight-bold);
+}
+
+.experiencia-educacao__list-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+.experiencia-educacao__item-description {
+    list-style: disc;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
