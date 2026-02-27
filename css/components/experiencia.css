@@ -16,6 +16,7 @@
 
 .experiencia-educacao__nav.card {
     border-radius: 100px;
+    border: #a08fff80 1px solid;
 }
 
 .experiencia-educacao__nav {
@@ -33,12 +34,28 @@
 
 .experiencia-educacao__nav-btn {
     padding: 15px 40px;
-    color: var(--color-white);
     background-color: transparent;
     cursor: pointer;
     width: auto;
     height: auto;
+    position: relative;
 }
+
+.tabs__indicator {
+    position: absolute;
+    background: linear-gradient(90deg, #fff 0%, #a259ff 55.81%);
+    height: 58px;
+    width: 170px; /* JS ajusta */
+    border-radius: 999px;
+    box-shadow: 0 0 18px #A08FFF;
+
+    transition:
+    transform .42s cubic-bezier(.2,.9,.2,1),
+    width .42s cubic-bezier(.2,.9,.2,1);
+
+    will-change: transform, width;
+}
+
 
 .experiencia-educacao__card {
     display: flex;
