@@ -1,6 +1,7 @@
 const tabsIndicator = document.querySelector('.tabs__indicator');
 const tabsList = document.querySelector('.experiencia-educacao__nav');
 const btn = document.querySelectorAll('.experiencia-educacao__nav-btn');
+const panels  = [...document.querySelectorAll(".panel")];
 
 function moveIndicatorTo(button) {
       if (!tabsIndicator || !tabsList || !button) return;
@@ -14,9 +15,20 @@ function moveIndicatorTo(button) {
       tabsIndicator.style.width = `${width}px`;
 }
 
-const initialButton = document.querySelector('.experiencia-educacao__nav-btn.ativo') || btn[0];
-moveIndicatorTo(initialButton);
+function showPanel(key) {
+  if (!key) return;
+  panels.forEach(panel => {
+    panel.hidden = panel.dataset.panel !== key;
+  });
+}
 
- btn.forEach(btn => {
-      btn.addEventListener("click", () => moveIndicatorTo(btn));
+const initialButton = document.querySelector('.experiencia-educacao__nav-btn.btn-active') || btn[0];
+moveIndicatorTo(initialButton);
+showPanel(initialButton?.dataset.tab);
+
+btn.forEach(button => {
+  button.addEventListener("click", () => {
+    moveIndicatorTo(button);
+    showPanel(button.dataset.tab);
+  });
 });
