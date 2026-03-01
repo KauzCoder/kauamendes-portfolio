@@ -6,7 +6,7 @@
   --color-dark-1000: #000000;
   --color-primary-500: #a259ff;
   --color-primary-400: #a08fff;
-  --color-neutral-300: #ffffffe0;
+  --color-neutral-300: #ffffffd3;
   --color-accent-fill: #2b0b3a;
 
   --gradient-surface: radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(105, 59, 147, 0.2) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0) 100%);
@@ -28,12 +28,6 @@
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-6: 24px;
-  --space-8: 32px;
 
   --radius-sm: 8px;
   --radius-md: 14px;

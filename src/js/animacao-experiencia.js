@@ -13,7 +13,11 @@ function moveIndicatorTo(button) {
 
       tabsIndicator.style.transform = `translateX(${left}px)`;
       tabsIndicator.style.width = `${width}px`;
+      
+      btn.forEach(btn => btn.classList.remove("btn-active"));
+      button.classList.add("btn-active");
 }
+
 
 function showPanel(key) {
   if (!key) return;
