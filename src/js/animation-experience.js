@@ -2,6 +2,7 @@ const tabsIndicator = document.querySelector('.tabs__indicator');
 const tabsList = document.querySelector('.experiencia-educacao__nav');
 const btn = document.querySelectorAll('.experiencia-educacao__nav-btn');
 const panels  = [...document.querySelectorAll(".panel")];
+const filtersContainer = document.querySelector('.filters');
 
 function moveIndicatorTo(button) {
       if (!tabsIndicator || !tabsList || !button) return;
@@ -18,6 +19,15 @@ function moveIndicatorTo(button) {
       button.classList.add("btn-active");
 }
 
+function updateFiltersVisibility(activeButton) {
+  if (!filtersContainer || !activeButton) return;
+
+  const buttons = Array.from(btn);
+  const isLastButtonActive = buttons[buttons.length - 1] === activeButton;
+
+  filtersContainer.style.display = isLastButtonActive ? 'flex' : 'none';
+  filtersContainer.setAttribute('aria-hidden', String(isLastButtonActive));
+}
 
 function showPanel(key) {
   if (!key) return;
@@ -29,10 +39,12 @@ function showPanel(key) {
 const initialButton = document.querySelector('.experiencia-educacao__nav-btn.btn-active') || btn[0];
 moveIndicatorTo(initialButton);
 showPanel(initialButton?.dataset.tab);
+updateFiltersVisibility(initialButton);
 
 btn.forEach(button => {
   button.addEventListener("click", () => {
     moveIndicatorTo(button);
     showPanel(button.dataset.tab);
+    updateFiltersVisibility(button);
   });
 });
