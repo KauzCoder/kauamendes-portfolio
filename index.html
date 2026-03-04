@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <script src="src/js/animacao-digitacao.js" defer></script>
     <script src="src/js/Effect-light-in-button.js" defer></script>
     <script src="src/js/barra-animada-paginacao.js" defer></script>
     <title>Portifolio Kaua Mendes</title>
+=======
+
+    <title>Kauã Mendes | Desenvolvedor FullStack</title>
+
+    <meta name="description" content="Portfólio de Kauã Mendes, desenvolvedor FullStack especializado em React, Node.js e arquitetura de software.">
+    <meta name="author" content="Kauã Mendes">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0b10">
+
+    <link rel="canonical" href="https://.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Kauã Mendes | Desenvolvedor FullStack">
+    <meta property="og:description" content="Projetos, tecnologias e experiência em desenvolvimento web moderno.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://.com/">
+    <meta property="og:image" content="https://.com/assets/og/cover.png">
+    <meta property="og:site_name" content="Kauã Mendes">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kauã Mendes | Desenvolvedor FullStack">
+    <meta name="twitter:description" content="Projetos e experiência em desenvolvimento web moderno.">
+    <meta name="twitter:image" content="https://.com/assets/og/cover.png">
+
+    <link rel="icon" href="assets/imgs/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="src/js/animated-pagination-bar.js" defer></script>
+    <script src="src/js/animation-experience.js" defer></script>
+    <script src="src/js/animation-typing.js" defer></script>
+    <script src="src/js/effect-light-in-button.js" defer></script>
+    <script src="src/js/certification-filter.js" defer></script>
+>>>>>>> Stashed changes
 </head>
 <body>
   <!-- Paginação -->
@@ -210,9 +247,261 @@
                     </div>
                     <img src="assets/imgs/Foco-Vazio(Desktop).png" alt="Preview do projeto" class="imagem-projeto">
             </article>
+                <div class="more-projects__divider">
+                    <span class="more-projects__text"><a href="">ver mais projetos</a></span>
+                </div>
         </section>
 
         <section class="experiencia-educacao" id="experiencia-educacao">
+            <div class="section-intro">
+                <div class="section-heading">
+                    <hr class="section-heading__line">
+                    <h2 class="section-heading__title texto-gradiente">EXPERIÊNCIA/EDUCAÇÃO</h2>
+                </div>
+            </div>  
+                <div class="experiencia-educacao__content">
+                    <nav class="experiencia-educacao__nav card" role="tablist" aria-label="Navegação entre Experiência, Educação e Certificações">
+                        <span class="tabs__indicator"></span>
+                        <button class="experiencia-educacao__nav-btn btn-active" data-tab="exp">Experiência</button>
+                        <hr class="experiencia-educacao__nav-divider">
+                        <button class="experiencia-educacao__nav-btn" data-tab="edu">Educação</button><hr class="experiencia-educacao__nav-divider">
+                        <button class="experiencia-educacao__nav-btn" data-tab="cert">Certificações</button>
+                    </nav>
+                        <div class="filters" aria-label="Filtros de categoria" aria-hidden="false">
+                            <button class="chip tag-list__item" type="button" data-filter="all" aria-pressed="true">Visão geral</button>
+                            <button class="chip tag-list__item" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+                            <button class="chip tag-list__item" type="button" data-filter="backend" aria-pressed="false">Backend</button>
+                            <button class="chip tag-list__item" type="button" data-filter="devops" aria-pressed="false">DevOps</button>
+                            <button class="chip tag-list__item" type="button" data-filter="git" aria-pressed="false">Git & Colaboração</button>
+                            <button class="chip tag-list__item" type="button" data-filter="design" aria-pressed="false">Design/UI-UX</button>
+                            <button class="chip tag-list__item" type="button" data-filter="data" aria-pressed="false">Dados</button>
+                            <button class="chip tag-list__item" type="button" data-filter="agile" aria-pressed="false">Metodologias Ágeis</button>
+                        </div>
+
+                    <div class="panel" data-panel="exp" role="tabpanel" aria-label="Lista de experiências" aria-hidden="false">
+                        <div class="experiencia-educacao__card card">
+                            <div class="experiencia-educacao__card-heading">
+                            <div class="experiencia-educacao__identificacao">
+                                <img src="assets/icons/pm_thumb 1.svg" alt="Ícone da Polícia Militar">
+                                <div class="experiencia-educacao__card-info">
+                                    <h3 class="experiencia-educacao__empresa">Comando Geral da Polícia Militar</h3>
+                                    <p class="experiencia-educacao__cargo">Voluntário Civil | Call Center</p>
+                                </div>
+                            </div>
+                            <span class="experiencia-educacao__periodo">2025 - 2027</span>
+                            </div>
+                            <ol class="experiencia-educacao__list-description">
+                            <li class="experiencia-educacao__item-description">Atendimento telefônico ativo e receptivo, oferecendo suporte, esclarecimento de dúvidas e encaminhamento adequado.</li>
+                            <li class="experiencia-educacao__item-description">Registro, triagem e encaminhamento de chamados para os setores responsáveis, assegurando agilidade no atendimento.</li>
+                            <li class="experiencia-educacao__item-description">Desenvolvimento de habilidades em comunicação clara, empatia, disciplina e trabalho em equipe em ambiente de alta responsabilidade.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="panel" data-panel="edu" aria-label="Lista de educação" hidden>
+                        <div class="experiencia-educacao__card card">
+                            <div class="experiencia-educacao__card-heading">
+                            <div class="experiencia-educacao__identificacao">
+                                <img src="assets/icons/unama-v_n 1.svg" alt="">
+                                <div class="experiencia-educacao__card-info">
+                                    <h3 class="experiencia-educacao__empresa">Ciência da Computação</h3>
+                                    <p class="experiencia-educacao__cargo">UNAMA – Universidade da Amazônia</p>
+                                </div>
+                            </div>
+                            <span class="experiencia-educacao__periodo">2025 - 2028</span>
+                            </div>
+                            <p>Graduação em Ciência da Computação na UNAMA, com foco em desenvolvimento de software, algoritmos, estruturas de dados e arquitetura de sistemas. Formação orientada à resolução estruturada de problemas e aplicação prática em projetos acadêmicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="panel" data-panel="cert"  aria-label="Lista de certificações" hidden> 
+                    <span class="meta card"><h4 id="countText" class="countText">Certificações: 0</h4></span>  
+
+                        <div class="certificacoes__content">
+                            <article class="course card" data-cat="frontend">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Frontend</span>
+                            </div>
+                            <h3 class="course__title">A partir do zero: HTML e CSS para projetos web</h3>
+                            <p class="course__desc">Estruturação semântica, responsividade e organização de layout moderno.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 53h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="backend">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Frontend</span>
+                            </div>
+                            <h3 class="course__title">A partir do zero: HTML e CSS para projetos web</h3>
+                            <p class="course__desc">Estruturação semântica, responsividade e organização de layout moderno.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 53h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="backend">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Frontend</span>
+                            </div>
+                            <h3 class="course__title">A partir do zero: HTML e CSS para projetos web</h3>
+                            <p class="course__desc">Estruturação semântica, responsividade e organização de layout moderno.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 53h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="design">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Design</span>
+                            </div>
+                            <h3 class="course__title">Figma</h3>
+                            <p class="course__desc">Introdução ao Figma, ferramenta de design e prototipação.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 26h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="design">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Design</span>
+                            </div>
+                            <h3 class="course__title">Masterclass Figma: Landing Page do zero</h3>
+                            <p class="course__desc">UI/UX, hierarquia visual e handoff para implementação.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 10h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="design">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Design</span>
+                            </div>
+                            <h3 class="course__title">Cores no design: teoria e prática</h3>
+                            <p class="course__desc">Aplicação de teoria das cores em interfaces e identidade visual.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 8h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="devops">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">DevOps</span>
+                            </div>
+                            <h3 class="course__title">Começando em DevOps</h3>
+                            <p class="course__desc">Introdução aos conceitos de DevOps e automação de processos.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 33h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="git">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Git</span>
+                            </div>
+                            <h3 class="course__title">Git e GitHub: compartilhando e colaborando</h3>
+                            <p class="course__desc">Branches, commits organizados e colaboração em repositórios.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 8h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="git">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Git</span>
+                            </div>
+                            <h3 class="course__title">Git e GitHub: dominando controle de versão</h3>
+                            <p class="course__desc">Fluxos de trabalho, resolução de conflitos e boas práticas.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 8h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="agile">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Agilidade</span>
+                            </div>
+                            <h3 class="course__title">Gestão Ágil: explorando conceitos da agilidade</h3>
+                            <p class="course__desc">Organização, priorização e melhoria contínua em projetos.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 8h</span>                                
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="data">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Dados</span>
+                            </div>
+                            <h3 class="course__title">Looker Studio: criando o primeiro relatório</h3>
+                            <p class="course__desc">Dashboards, métricas e visualização para decisão baseada em dados.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 8h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="data">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Dados</span>
+                            </div>
+                            <h3 class="course__title">Looker Studio: visualização de dados</h3>
+                            <p class="course__desc">Estruturação de indicadores e painéis analíticos.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 6h</span>
+                            </div>
+                            </article>
+                            <article class="course card" data-cat="data">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
+                                </div>
+                                <span class="tag-list__item">Dados</span>
+                            </div>
+                            <h3 class="course__title">Conhecendo SQL</h3>
+                            <p class="course__desc">Introdução aos conceitos fundamentais de SQL e manipulação de dados.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 34h</span>
+                            </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section class="contato" id="contato">
         </section>
