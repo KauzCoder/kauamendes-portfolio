@@ -36,8 +36,8 @@
     <script src="src/js/animation-experience.js" defer></script>
     <script src="src/js/animated-pagination-bar.js" defer></script>
     <script src="src/js/animation-typing.js" defer></script>
-    <script src="src/js/effect-light-in-button.js" defer></script>
-    <script src="src/js/certification-filter.js"></script>
+    <script src="src/js/Effect-light-in-button.js" defer></script>
+    <script src="src/js/certification-filter.js" defer></script>
 </head>
 
 <body>
@@ -256,18 +256,15 @@
                         <button class="experiencia-educacao__nav-btn" data-tab="edu">Educação</button><hr class="experiencia-educacao__nav-divider">
                         <button class="experiencia-educacao__nav-btn" data-tab="cert">Certificações</button>
                     </nav>
-                        <div class="meta">
-                            <span class="badge"><span class="dot"></span><span id="countText">0</span></span>
                         <div class="filters" aria-label="Filtros de categoria" aria-hidden="false">
                             <button class="chip tag-list__item" type="button" data-filter="all" aria-pressed="true">Visão geral</button>
                             <button class="chip tag-list__item" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
                             <button class="chip tag-list__item" type="button" data-filter="backend" aria-pressed="false">Backend</button>
                             <button class="chip tag-list__item" type="button" data-filter="devops" aria-pressed="false">DevOps</button>
                             <button class="chip tag-list__item" type="button" data-filter="git" aria-pressed="false">Git & Colaboração</button>
-                            <button class="chip tag-list__item" type="button" data-filter="design" aria-pressed="false">Design/UI-UX/</button>
+                            <button class="chip tag-list__item" type="button" data-filter="design" aria-pressed="false">Design/UI-UX</button>
                             <button class="chip tag-list__item" type="button" data-filter="data" aria-pressed="false">Dados</button>
                             <button class="chip tag-list__item" type="button" data-filter="agile" aria-pressed="false">Metodologias Ágeis</button>
-                        </div>
                         </div>
 
                     <div class="panel" data-panel="exp" role="tabpanel" aria-label="Lista de experiências" aria-hidden="false">
@@ -305,7 +302,9 @@
                         </div>
                     </div>
 
-                    <div class="panel" data-panel="cert"  aria-label="Lista de certificações" hidden>        
+                    <div class="panel" data-panel="cert"  aria-label="Lista de certificações" hidden> 
+                    <span class="meta card"><h4 id="countText" class="countText">Certificações: 0</h4></span>  
+
                         <div class="certificacoes__content">
                             <article class="course card" data-cat="frontend">
                             <div class="course__top">
@@ -419,9 +418,21 @@
                                 <span class="hours">Carga horária: 10h</span>
                             </div>
                             </article>
-                                <div class="panel__scroll">
-                                    <div class="timeline" id="timeline"></div>
+
+                            <article class="course card" data-cat="design">
+                            <div class="course__top">
+                                <div class="provider">
+                                <img class="provider__icon" src="assets/icons/alura.svg" alt="Logo da Alura" loading="lazy" decoding="async">
+                                <span>Alura</span>
                                 </div>
+                                <span class="tag-list__item">Design</span>
+                            </div>
+                            <h3 class="course__title">Cores no design: teoria e prática</h3>
+                            <p class="course__desc">Aplicação de teoria das cores em interfaces e identidade visual.</p>
+                            <div class="course__bottom">
+                                <span class="hours">Carga horária: 8h</span>
+                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>

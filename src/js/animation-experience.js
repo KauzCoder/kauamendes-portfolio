@@ -25,8 +25,14 @@ function updateFiltersVisibility(activeButton) {
   const buttons = Array.from(btn);
   const isLastButtonActive = buttons[buttons.length - 1] === activeButton;
 
-  filtersContainer.style.display = isLastButtonActive ? 'flex' : 'none';
-  filtersContainer.setAttribute('aria-hidden', String(isLastButtonActive));
+  if (isLastButtonActive) {
+    filtersContainer.style.display = 'flex';
+    filtersContainer.removeAttribute('aria-hidden');
+    filtersContainer.removeAttribute('inert');
+  } else {
+    filtersContainer.style.display = 'none';
+    filtersContainer.setAttribute('inert', '');
+  }
 }
 
 function showPanel(key) {
