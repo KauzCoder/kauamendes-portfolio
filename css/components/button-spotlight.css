@@ -1,0 +1,51 @@
+.btn-spotlight {
+  --x: 50%;
+  --y: 50%;
+  position: relative;
+  padding: 15px 49px;
+  border-radius: 27px;
+  border: 1px solid var(--color-dark-700);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .15s ease, border-color .2s ease;
+}
+
+.btn-spotlight--primary { background: var(--color-bg-button-primary); }
+.btn-spotlight--secondary { background: var(--color-bg-button-secondary); }
+
+.btn-spotlight:hover {
+  border-color: rgba(255,255,255,.25);
+  transform: translateY(-1px);
+}
+
+.btn-spotlight::before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  pointer-events: none;
+  background: radial-gradient(
+    300px circle at var(--x) var(--y),
+    rgba(255,255,255,.22),
+    #6407fa36 35%,
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.btn-spotlight:hover::before { opacity: 1; }
+
+.btn-spotlight::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,.08),
+    transparent 40%,
+    rgba(0,0,0,.25)
+  );
+  mix-blend-mode: screen;
+  opacity: .7;
+}

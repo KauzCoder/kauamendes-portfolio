@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: var(--layout-header-offset);
+}
+
+body {
+  background-image: url('../../assets/imgs/Effects-backsground.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: normal;
+
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  color: var(--color-text-contrast);
+}
