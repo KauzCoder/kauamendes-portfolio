@@ -46,10 +46,9 @@ margin-right: -27px;
     padding: 26px 55px 31px 37px;
     width: clamp(100px, 67vw, 670px);
     height: auto;
-}
 
-.projetos__description-text {
-    width: 500px;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .projetos__image {
@@ -78,7 +77,10 @@ margin-right: -27px;
 }
 
 .more-projects__text{
+<<<<<<< HEAD
   color: white;
+=======
+>>>>>>> feat/projetos
   font-size:14px;
   letter-spacing:2px;
   text-transform:uppercase;

@@ -55,8 +55,8 @@
 
 .sobre-mim__foto {
     display: flex;
-    width: 400px; 
-    height: 395px;
+    width: 500px; 
+    height: 495px;
     flex-shrink: 0;
 
     border-radius: var(--radius-round);

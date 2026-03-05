@@ -7,6 +7,7 @@
   background-blend-mode: normal, overlay, normal;
   box-shadow: var(--shadow-card-inner);
   backdrop-filter: var(--blur-lg);
+  overflow: hidden;
 }
 
 .tag-list__item {
