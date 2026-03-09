@@ -1,4 +1,7 @@
-section:not(#hero) {
-  min-height: 100vh;
+section:not(#hero){
   padding: 0 71px;
+}
+
+section:not(#hero):not(#experiencia-educacao){
+  min-height: 100vh;
 }

@@ -1,4 +1,6 @@
 .experiencia-educacao {
+    min-height: auto;
+    height: auto;
     margin-top: 200px;
     display: flex;
     flex-direction: column;
