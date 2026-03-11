@@ -5,3 +5,9 @@ section:not(#hero){
 section:not(#hero):not(#experiencia-educacao){
   min-height: 100vh;
 }
+
+@media (max-width: 600px) {
+  section:not(#hero) {
+    padding: 0 22px;
+  }
+}
