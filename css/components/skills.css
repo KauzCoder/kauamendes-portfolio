@@ -48,5 +48,34 @@ background-color: hsla(0, 0%, 0%, 0.5);
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
 
+@media (max-width: 768px) {
+    .skills__list {
+        width: 150%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #a96dff rgba(255,255,255,0.05);
+    }
+
+    .skills__card {
+        flex-shrink: 0;
+        justify-content: flex-start;
+        width: 65vw;
+    }
+
+    .skills__list::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .skills__list::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.05);
+        border-radius: 999px;
+    }
+
+    .skills__list::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #b56cff, #7d2eff);
+        border-radius: 999px;
+    }
 }

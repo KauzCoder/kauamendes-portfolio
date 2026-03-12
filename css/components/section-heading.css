@@ -25,8 +25,8 @@
 }
 
 .section-intro__description {
-  font-size: clamp(1rem, 2.5vw, 1.125rem);
-  font-weight: var(--font-weight-regular);
+  font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+  font-weight: var(--font-weight-semibold);
   letter-spacing: 3.96px;
   max-width: 60ch;
   width: 100%;
