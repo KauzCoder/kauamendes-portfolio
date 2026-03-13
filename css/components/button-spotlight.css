@@ -1,4 +1,9 @@
 .btn-spotlight {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: auto;
   --x: 50%;
   --y: 50%;
   position: relative;

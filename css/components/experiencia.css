@@ -1,38 +1,13 @@
 .experiencia-educacao {
-    margin-top: 390px;
+    min-height: auto;
+    height: auto;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     gap: 41px;
 }
 
-.experiencia-educacao__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;
-    gap: 60px;
-    width: 100%;
-}
-
-.panel[hidden] { display: none; }
-.panel{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.experiencia-educacao__nav.card {
-    border-radius: 100px;
-    border: #a08fff80 1px solid;
-}
-
-.experiencia-educacao__nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
+/* ====== BARRA DE NAVEGACAO SECTIONS ====== */
 .experiencia-educacao__nav-divider{
     min-width: 100px;
     width: auto;
@@ -58,80 +33,330 @@
 
 .btn-active{
     font-weight: var(--font-weight-bold);
-
+    color: var(--color-white);
     transition: all ease-in-out .4s;
 }
 
-.tabs__indicator {
-    position: absolute;
-    background: linear-gradient(90deg, #fff 0%, #a259ff 55.81%);
-    height: 58px;
-    width: 170px; /* JS ajusta */
-    border-radius: 999px;
-    box-shadow: 0 0 18px #A08FFF;
-
-    transition:
-    transform .42s cubic-bezier(.2,.9,.2,1),
-    width .42s cubic-bezier(.2,.9,.2,1);
-
-    will-change: transform, width;
+.experiencia-educacao__nav.card {
+    border-radius: 100px;
+    border: #a08fff80 1px solid;
 }
 
-
-.experiencia-educacao__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 38px 28px;
-    max-width: 800px;
-    width: 100%;
-    max-height: 347px;
-    gap: 30px;
-}
-
-.experiencia-educacao__card-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    gap: 28px;
-}
-.experiencia-educacao__identificacao {
+.experiencia-educacao__nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.experiencia-educacao__empresa {
-    font-size: var(--font-size-subtitle);
+.tabs__indicator {
+    position: absolute;
+    background: linear-gradient(90deg, #ffffffbb 0%, #a259ff 55.81%);
+    height: 58px;
+    width: 170px; /* JS ajusta */
+    border-radius: 999px;
+    box-shadow: 0 0 18px #A08FFF;
+    
+    transition:
+    transform .42s cubic-bezier(.2,.9,.2,1),
+    width .42s cubic-bezier(.2,.9,.2,1);
+    
+    will-change: transform, width;
+}
+/* ====== FILTER ====== */
+
+.filters{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    gap: 10px;
+}
+
+.chip:hover {
+    cursor: pointer;
     color: var(--color-white);
+    transition: all ease-in-out .4s;
+    transform: translateY(-2px);
 }
 
-.experiencia-educacao__cargo {
-    font-size: var(--font-size-base);
-    color: var(--color-primary-500);
-}
+.chip[aria-pressed="true"]{
+      color: rgba(255,255,255,.96);
+      background: linear-gradient(90deg, #ffffffbb 0%, #a259ff 55.81%);
+      box-shadow: 0 0 0 1px rgba(170,120,255,.28), 0 0 24px rgb(85, 38, 167);
+    }
 
-.experiencia-educacao__periodo {
-    border-radius: 21px;
-    border: 1px solid var(--Primary-Soft-Glow, #A08FFF);
-    background: var(--Dark-700, #0C0B20);
-    padding: 11px 11px;
-    color: var(--color-primary-500);
-    font-weight: var(--font-weight-bold);
-}
 
-.experiencia-educacao__list-description {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-left: 20px;
-}
+    /* ====== CARDS EXP & EDU ====== */
+    .experiencia-educacao__card {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 38px 28px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 347px;
+            gap: 30px;
+        }
+        
+        .experiencia-educacao__card-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            gap: 28px;
+        }
+        .experiencia-educacao__identificacao {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .experiencia-educacao__empresa {
+            font-size: var(--font-size-subtitle);
+            color: var(--color-white);
+        }
+        
+        .experiencia-educacao__cargo {
+            font-size: var(--font-size-base);
+            color: var(--color-primary-500);
+        }
+        
+        .experiencia-educacao__periodo {
+            border-radius: 21px;
+            border: 1px solid var(--Primary-Soft-Glow, #A08FFF);
+            background: var(--Dark-700, #0C0B20);
+            padding: 11px 11px;
+            color: var(--color-primary-500);
+            font-weight: var(--font-weight-bold);
+        }
+        
+        .experiencia-educacao__list-description {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-left: 20px;
+        }
+        
+        .experiencia-educacao__item-description {
+            list-style: disc;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
 
-.experiencia-educacao__item-description {
-    list-style: disc;
-    color: var(--color-text-muted);
-    line-height: 1.6;
+        /* ====== COUNT META ====== */
+
+    .meta{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 12px 17px;
+        margin-bottom: 10px;
+    }
+
+    .countText {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .countText::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #d8bbff 0%, #a259ff 50%, #6f2bff 100%);
+        box-shadow: 0 0 10px rgba(162, 89, 255, 0.75);
+    }
+
+    .countText::after {
+        content: "";
+        display: block;
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
+    }
+        
+        /* ====== CARD CERTIFICOES ====== */
+
+        .course {
+            padding: 14px 14px 12px;
+            overflow: hidden;
+            transition: transform .15s ease, border-color .2s ease, box-shadow .2s ease;
+            height: clamp(110px, 1px, 130px);
+        }
+
+        .course:hover{
+            transform: translateY(-2px);
+            border-color: rgba(170,120,255,.35);
+            box-shadow: 0 18px 44px rgba(0,0,0,.55), 0 0 26px rgba(170,120,255,.18);
+        }
+        
+        .course__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .provider{
+            position: relative;
+            display:flex;
+            align-items:center;
+            gap: 10px;
+            font-weight: 800;
+            letter-spacing: .2px;
+        }
+        
+        .provider__icon{
+            width: 28px;
+            height: 28px;
+            border-radius: 10px;
+            display:grid;
+            place-items:center;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(255,255,255,.06);
+            font-weight: 900;
+            color: rgba(255,255,255,.85);
+        }
+        
+        
+        .course__title{
+            position: relative;
+            font-size: 14px;
+            line-height: 1.25;
+            letter-spacing: .15px;
+        }
+        
+        .course__desc{
+            position: relative;
+            margin: 6px 0 0;
+            font-size: 12px;
+            line-height: 1.45;
+        }
+        
+        .course__bottom{
+            position: relative;
+            margin-top: 10px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .hours{
+            font-size: 12px;
+        }
+    
+    /* ====== LAYOUT SECTIONS====== */
+        .panel[hidden] { display: none;}
+        .course[hidden] { display: none;}
+        .experiencia-educacao__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
+            align-items: center;
+            gap: 60px;
+            width: 100%;
+        }
+        
+        
+        .certificacoes__content {
+            flex: 1;
+            max-height: 450px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: grid;
+            width: auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px
+        }
+
+        .certificacoes__content > .full-width {
+        grid-column: 1 / -1;
+        }
+        
+        /* ====== SCROLLBAR ====== */
+
+  .certificacoes__content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .certificacoes__content::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 999px;
+  }
+
+  .certificacoes__content::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #b56cff, #7d2eff);
+    border-radius: 999px;
+  }
+
+  /* Firefox */
+  .certificacoes__content {
+    scrollbar-width: thin;
+    scrollbar-color: #a96dff rgba(255,255,255,0.05);
+  }
+
+
+@media (max-width: 600px) {
+    
+    .experiencia-educacao {
+        margin-top: 100px;
+    }
+    .course {
+        height: auto;
+    }
+    .experiencia-educacao__content{
+    overflow: hidden;
+    }
+    
+    .experiencia-educacao__nav-divider {
+    display: none;
+    }
+    
+    .experiencia-educacao__nav-btn {
+    padding: 15px 16px;
+    font-size: 14px;
+    }
+    
+    .tabs__indicator {
+        width: 100%;
+    }
+    
+    .filters {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+
+  .filters::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 999px;
+  }
+
+  .filters::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #b56cff, #7d2eff);
+    border-radius: 999px;
+  }
+
+  .filters {
+    scrollbar-width: thin;
+    scrollbar-color: #a96dff rgba(255,255,255,0.05);
+  }
+    
+    .experiencia-educacao__content {
+        gap: 30px;
+    }
+    
+    .certificacoes__content {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    
 }
